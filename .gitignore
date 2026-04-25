@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.temp
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# Keep directory skeleton markers
+!.gitkeep
