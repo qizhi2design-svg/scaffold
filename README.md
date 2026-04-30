@@ -55,6 +55,14 @@ scaffold/
 - `discussions/`：讨论记录、决策说明
 - `bugs/`：问题记录与排查过程
 
+其中 `workspace/prototypes/` 默认附带三套示例：
+
+- `example/`：通用网页原型
+- `mobile-demo/`：移动端原型
+- `admin-demo/`：PC 后台原型
+
+你可以直接在这些目录里继续修改，也可以作为新原型的参考骨架。
+
 ## 约定
 
 - 目录通过 `.gitkeep` 保持空目录结构

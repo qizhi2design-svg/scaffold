@@ -3,44 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>示例原型</title>
+    <title>网页原型示例</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1 data-mark="title">产品标题</h1>
-            <p class="subtitle">简短的产品描述</p>
+            <h1 class="title">网页原型示例</h1>
+            <p class="subtitle">这是一个适合桌面网页方案讨论的原型骨架。</p>
         </header>
 
         <main class="main-content">
             <section class="feature-section">
-                <div class="feature-card" data-mark="feature-1">
-                    <div class="feature-icon">🎯</div>
-                    <h3>核心功能 1</h3>
-                    <p>功能描述文字</p>
-                </div>
-
-                <div class="feature-card" data-mark="feature-2">
-                    <div class="feature-icon">⚡</div>
-                    <h3>核心功能 2</h3>
-                    <p>功能描述文字</p>
-                </div>
-
-                <div class="feature-card" data-mark="feature-3">
-                    <div class="feature-icon">🚀</div>
-                    <h3>核心功能 3</h3>
-                    <p>功能描述文字</p>
+                <h2>核心功能</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>功能一</h3>
+                        <p>聚焦页面想验证的第一个价值点。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>功能二</h3>
+                        <p>用简洁内容承接用户的下一步动作。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>功能三</h3>
+                        <p>把关键场景拆成少量清晰模块。</p>
+                    </div>
                 </div>
             </section>
 
             <section class="action-section">
-                <button class="primary-button" data-mark="cta-button">开始使用</button>
+                <h2>操作示例</h2>
+                <div class="action-container">
+                    <input type="text" id="userInput" class="input-field" placeholder="输入你要验证的文案...">
+                    <button id="submitBtn" class="primary-button">提交</button>
+                </div>
+                <div id="result" class="result-message"></div>
             </section>
         </main>
 
         <footer class="footer">
-            <p>© 2024 产品名称</p>
+            <p>&copy; 2026 网页原型示例 - 使用 PRDKit 创建</p>
         </footer>
     </div>
 

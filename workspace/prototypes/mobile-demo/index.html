@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>移动端示例</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-shell">
+        <div class="status-bar">
+            <span>9:41</span>
+            <span>5G</span>
+        </div>
+
+        <main class="screen">
+            <section class="hero-card">
+                <p class="eyebrow">移动端示例</p>
+                <h1 class="title">移动端示例</h1>
+                <p class="subtitle">适合 App / H5 首屏、转化路径和单手交互验证。</p>
+                <button class="primary-cta" id="heroAction">立即体验</button>
+            </section>
+
+            <section class="module-section">
+                <div class="section-heading">
+                    <h2>关键流程</h2>
+                    <button class="ghost-button" id="toggleTips">查看提示</button>
+                </div>
+                <div class="module-list">
+                    <article class="module-card">
+                        <strong>1. 首屏传达</strong>
+                        <p>用一句话说明为什么用户值得继续操作。</p>
+                    </article>
+                    <article class="module-card">
+                        <strong>2. 核心动作</strong>
+                        <p>将最重要的输入和按钮放到拇指热区内。</p>
+                    </article>
+                    <article class="module-card">
+                        <strong>3. 结果反馈</strong>
+                        <p>操作后立刻提示当前状态和下一步。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="composer-card">
+                <label class="composer-label" for="mobileInput">输入要验证的移动端场景</label>
+                <div class="composer-row">
+                    <input id="mobileInput" class="composer-input" type="text" placeholder="例如：优惠券领取">
+                    <button class="secondary-cta" id="submitNote">记录</button>
+                </div>
+                <p class="helper-text" id="helperText">建议一句话写清你的验证目标。</p>
+            </section>
+        </main>
+
+        <nav class="tab-bar">
+            <button class="tab is-active">首页</button>
+            <button class="tab">流程</button>
+            <button class="tab">我的</button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

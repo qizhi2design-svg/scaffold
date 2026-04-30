@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台原型示例</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">PRDKit Admin</div>
+            <nav class="nav-group">
+                <button class="nav-item is-active">工作台</button>
+                <button class="nav-item">任务</button>
+                <button class="nav-item">用户</button>
+                <button class="nav-item">设置</button>
+            </nav>
+        </aside>
+
+        <div class="content-shell">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">PC 后台示例</p>
+                    <h1 class="title">后台原型示例</h1>
+                </div>
+                <button class="primary-button" id="newTaskButton">新建任务</button>
+            </header>
+
+            <main class="workspace">
+                <section class="stats-grid">
+                    <article class="stat-card">
+                        <span>进行中项目</span>
+                        <strong>12</strong>
+                    </article>
+                    <article class="stat-card">
+                        <span>待处理工单</span>
+                        <strong>38</strong>
+                    </article>
+                    <article class="stat-card">
+                        <span>今日转化率</span>
+                        <strong>17.4%</strong>
+                    </article>
+                </section>
+
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h2>任务列表</h2>
+                            <p>适合验证后台列表、筛选和批量操作。</p>
+                        </div>
+                        <div class="toolbar">
+                            <input class="search-input" id="searchInput" type="search" placeholder="搜索任务标题">
+                            <button class="secondary-button" id="resetButton">重置</button>
+                        </div>
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>任务</th>
+                                <th>负责人</th>
+                                <th>状态</th>
+                                <th>更新时间</th>
+                            </tr>
+                        </thead>
+                        <tbody id="taskTableBody">
+                            <tr>
+                                <td>完善注册漏斗看板</td>
+                                <td>Lin</td>
+                                <td><span class="tag tag-warn">待确认</span></td>
+                                <td>今天 10:24</td>
+                            </tr>
+                            <tr>
+                                <td>订单补贴策略回归</td>
+                                <td>Ada</td>
+                                <td><span class="tag tag-success">进行中</span></td>
+                                <td>今天 09:10</td>
+                            </tr>
+                            <tr>
+                                <td>客服工单优先级调整</td>
+                                <td>Mo</td>
+                                <td><span class="tag">已完成</span></td>
+                                <td>昨天 18:42</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
