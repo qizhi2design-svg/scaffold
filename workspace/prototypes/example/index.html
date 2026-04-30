@@ -3,42 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网页原型示例</title>
+    <title>{{title}}</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="title">网页原型示例</h1>
-            <p class="subtitle">这是一个适合桌面网页方案讨论的原型骨架。</p>
+            <h1 class="title" id="pageTitle">{{title}}</h1>
+            <p class="subtitle" id="pageSubtitle">这是一个原型页面示例</p>
         </header>
 
         <main class="main-content">
             <section class="feature-section">
                 <h2>核心功能</h2>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🎯</div>
-                        <h3>功能一</h3>
-                        <p>聚焦页面想验证的第一个价值点。</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>功能二</h3>
-                        <p>用简洁内容承接用户的下一步动作。</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🚀</div>
-                        <h3>功能三</h3>
-                        <p>把关键场景拆成少量清晰模块。</p>
-                    </div>
-                </div>
+                <div class="feature-grid" id="featureGrid"></div>
             </section>
 
             <section class="action-section">
                 <h2>操作示例</h2>
                 <div class="action-container">
-                    <input type="text" id="userInput" class="input-field" placeholder="输入你要验证的文案...">
+                    <input type="text" id="userInput" class="input-field" placeholder="输入内容...">
                     <button id="submitBtn" class="primary-button">提交</button>
                 </div>
                 <div id="result" class="result-message"></div>
@@ -46,10 +30,11 @@
         </main>
 
         <footer class="footer">
-            <p>&copy; 2026 网页原型示例 - 使用 PRDKit 创建</p>
+            <p>&copy; 2024 {{title}} - 使用 PRDKit 创建</p>
         </footer>
     </div>
 
+    <script src="mock.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
