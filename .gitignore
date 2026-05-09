@@ -19,5 +19,9 @@
 *.tar
 *.gz
 
+# prdkit runtime files
+.prdkit/server.pid
+.prdkit/templates/
+
 # Keep directory skeleton markers
 !.gitkeep
